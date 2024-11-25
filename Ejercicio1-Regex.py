@@ -7,7 +7,8 @@ def evaluar_contrasena(contrasena):
   mayuscula = re.compile(r'[A-Z]')
   minuscula = re.compile(r'[a-z]')
   numero = re.compile(r'\d')
-  especial = re.compile(r'[^a-zA-Z0-9]')
+  especial = re.compile(r'[!@#$%^&*]')
+
 
   # Evaluar
   tiene_mayuscula = bool(mayuscula.search(contrasena))
