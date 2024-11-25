@@ -23,7 +23,7 @@ def evaluar_contrasena(contrasena):
     sugerencias.append("Incluir al menos una minuscula.")
   if not tiene_numero:
     sugerencias.append("Incluir al menos un número.")
-  if not especial: 
+  if not especial:
     sugerencias.append("Incluir al menos un caracter especial.")
   return sugerencias
 
@@ -31,7 +31,7 @@ def evaluar_contrasena(contrasena):
 
 
 st.title("Evaluador de Contraseñas")
-
+st.write("Este codigo fue elaborado por Stiven Julio Doval")
 contrasena = st.text_input("Ingrese su contraseña")
 
 if contrasena:
